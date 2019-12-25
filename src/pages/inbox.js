@@ -1,7 +1,7 @@
-import Inboxscreen from '../screen/inbox/Inbox'
+import Index from '../screen/index'
 
 const Inbox = () => (
-    <Inboxscreen />
+    <Index />
 );
 
 export default Inbox;

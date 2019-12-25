@@ -1,11 +1,8 @@
 import Link from 'next/link';
-
+import Inbox from './inbox'
 const Index = () => (
     <div>
-        <Link href="/Inbox">
-            <a>About Page</a>
-        </Link>
-        <p>Hello Next.js</p>
+        <Inbox />
     </div>
 );
 
