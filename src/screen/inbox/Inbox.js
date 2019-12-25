@@ -1,6 +1,8 @@
 import React from 'react'
-import { List, Avatar, Spin } from 'antd';
+import { List, Avatar, Spin, Typography } from 'antd';
 import axios from 'axios';
+
+const { Paragraph, Title } = Typography;
 
 class Inbox extends React.Component {
     state = {
@@ -36,19 +38,23 @@ class Inbox extends React.Component {
                         itemLayout="horizontal"
                         dataSource={requestData}
                         renderItem={item => (
-                            <List.Item>
-                                <List.Item.Meta
-                                    avatar={
-                                        <Avatar>{item.from.name[0]}</Avatar>
-                                    }
-                                    title={
-                                        <a href="https://ant.design">{item.subject}</a>
-                                    }
-                                    description={
-                                        <span>{item.body}</span>
-                                    }
-                                />
-                            </List.Item>
+                            <a onClick={() => { console.log("asd") }}>
+                                <List.Item >
+                                    <List.Item.Meta
+                                        avatar={
+                                            <Avatar>{item.from.name[0]}</Avatar>
+                                        }
+                                        title={
+                                            <span >{item.subject}</span >
+                                        }
+                                        description={
+                                            <span >{item.body}</span>
+                                        }
+                                    />
+                                    {/* <span>{item.body}</span> */}
+                                    asd
+                                </List.Item>
+                            </a>
                         )}
                     />
                 </Spin>
