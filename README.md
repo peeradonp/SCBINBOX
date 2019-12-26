@@ -22,5 +22,7 @@ Run project
   - npm i
   - npm run dev
   
+  this project will run by default at http://localhost:3000/
+  
   local test endpoint can change at
   - src/screen/inbox/Inbox.js at line 25
