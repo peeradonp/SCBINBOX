@@ -1,7 +1,7 @@
 import { Layout, Menu, Icon, Avatar } from 'antd';
 import styled from 'styled-components';
 
-const { Header, Sider, Content } = Layout;
+const { Header, Sider, Content, Footer } = Layout;
 
 class Sidebar extends React.Component {
     state = {
@@ -23,7 +23,7 @@ class Sidebar extends React.Component {
 
                 >
                     <div style={{ padding: '22px 18px' }} >
-                        <span style={{ color: '#ffffff' }}>INBOX</span>
+                        <span style={{ color: '#ffffff' }}><Icon type="mail" style={{ paddingRight: 8 }} />Mail</span>
                     </div>
                     <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
                         <Menu.Item key="1">
@@ -40,6 +40,7 @@ class Sidebar extends React.Component {
                     </Header>
                     <Content style={{ margin: '24px 16px 0' }}>
                         <div style={{ padding: 24, background: '#fff', minHeight: 360 }}>{this.props.children}</div>
+                        <Footer style={{ textAlign: 'center' }}>Created by Peeradon Phraekjinda @OD185</Footer>
                     </Content>
                 </Layout>
             </Layout>
