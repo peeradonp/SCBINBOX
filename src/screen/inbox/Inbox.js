@@ -37,7 +37,6 @@ class Inbox extends React.Component {
 
         axios.get(apiLink)
             .then(res => {
-                console.log(res)
                 if (res.status === 200) {
                     this.setState({
                         requestData: res.data,
