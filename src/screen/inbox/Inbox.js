@@ -43,7 +43,7 @@ class Inbox extends React.Component {
                     <List
                         header={
                             <div className='List-header' style={{ display: 'flex' }}>
-                                <div style={{ flex: 1 }}>
+                                <div className='Inbox' style={{ flex: 1 }}>
                                     <Paragraph ellipsis={{ rows: 1, expandable: false }}
                                         style={{ marginLeft: 58, fontWeight: 'bolder', color: 'black', fontSize: 18 }}
                                     >Inbox</Paragraph>
